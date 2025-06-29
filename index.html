@@ -7,9 +7,7 @@
   <title>FC7 Segurança Eletrônica</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -25,34 +23,21 @@
       align-items: center;
       color: white;
       flex-wrap: wrap;
-      position: relative;
     }
-    header img {
-      height: 60px;
-      margin-right: 20px;
-    }
+    header img { height: 60px; margin-right: 20px; }
     .branding {
       display: flex;
       align-items: center;
     }
-    .branding h1 {
-      font-size: 1.5em;
-      margin: 0;
-    }
-    .branding p {
-      margin: 2px 0 0 0;
-      font-size: 0.9em;
-      opacity: 0.9;
-    }
+    .branding h1 { font-size: 1.5em; margin: 0; }
+    .branding p { margin: 2px 0 0 0; font-size: 0.9em; opacity: 0.9; }
     nav {
       margin-top: 10px;
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
     }
-    .menu-item {
-      position: relative;
-    }
+    .menu-item { position: relative; }
     .menu-link {
       color: white;
       text-decoration: none;
@@ -63,12 +48,8 @@
       align-items: center;
       gap: 8px;
     }
-    .menu-link i {
-      font-size: 1em;
-    }
-    .menu-link:hover {
-      background-color: rgba(255,255,255,0.2);
-    }
+    .menu-link i { font-size: 1em; }
+    .menu-link:hover { background-color: rgba(255,255,255,0.2); }
     .submenu {
       display: none;
       position: absolute;
@@ -88,12 +69,51 @@
       color: #003366;
       font-size: 0.95em;
     }
-    .submenu a:hover {
-      background-color: #f0f0f0;
+    .submenu a:hover { background-color: #f0f0f0; }
+    .menu-item:hover .submenu { display: block; }
+
+    /* Carrossel */
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
     }
-    .menu-item:hover .submenu {
-      display: block;
+    .slides {
+      display: flex;
+      transition: transform 1s ease-in-out;
+      animation: slideAnimation 15s infinite;
     }
+    .slide {
+      min-width: 100%;
+      height: 400px;
+      position: relative;
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .caption {
+      position: absolute;
+      bottom: 30px;
+      left: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 5px;
+      font-size: 1.1em;
+      max-width: 80%;
+    }
+    @keyframes slideAnimation {
+      0% { transform: translateX(0); }
+      33.33% { transform: translateX(0); }
+      38% { transform: translateX(-100%); }
+      71.33% { transform: translateX(-100%); }
+      76% { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+
     main {
       padding: 50px 20px;
       max-width: 1000px;
@@ -122,7 +142,6 @@
       color: #ffffff;
       text-decoration: underline;
     }
-    /* WhatsApp Floating Button */
     .whatsapp-float {
       position: fixed;
       width: 60px;
@@ -176,15 +195,31 @@
       </div>
     </nav>
   </header>
+
+  <!-- Carrossel de Imagens FC7 -->
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide active">
+        <img src="assets/banner1-monitoramento.png" alt="Monitoramento 24h FC7">
+        <div class="caption">Monitoramento 24h com tecnologia de ponta e resposta imediata.</div>
+      </div>
+      <div class="slide">
+        <img src="assets/banner2-capsula-solucoes.png" alt="Soluções FC7">
+        <div class="caption">Soluções completas em segurança eletrônica sob medida.</div>
+      </div>
+      <div class="slide">
+        <img src="assets/banner3-familia-protegida.png" alt="Família protegida pela FC7">
+        <div class="caption">Sua família tranquila em casa ou viajando. FC7 cuida por você.</div>
+      </div>
+    </div>
+  </div>
+
   <main>
     <section>
       <h2>Sobre a FC7 Segurança Eletrônica</h2>
       <p>Com mais de 14 anos de atuação, a FC7 Segurança Eletrônica é referência em soluções completas para proteção patrimonial. Sediada em São José do Rio Preto/SP, atende residências, comércios, indústrias, condomínios e propriedades rurais com responsabilidade, fé e conhecimento técnico.</p>
-
       <p>Oferecemos serviços de venda, instalação e manutenção corretiva e preventiva (com ou sem contrato) nos seguintes sistemas: <strong>sistemas de câmeras (CFTV)</strong>, <strong>sistemas de alarme</strong>, <strong>controle de acesso</strong>, <strong>cercas elétricas</strong>, <strong>redes lógicas</strong>, <strong>telecomunicações (interfonia)</strong>, <strong>portões automáticos</strong> e <strong>energia solar</strong>. Atuamos também com <strong>auditoria de sistemas de terceiros</strong>, <strong>projetos personalizados</strong> e <strong>treinamentos técnicos</strong>, tanto ministrando quanto participando, garantindo constante atualização e excelência.</p>
-
       <p>Nosso serviço de <strong>monitoramento 24 horas</strong> atua em tempo real com tecnologia de ponta, integrando sensores, alarmes, imagens e <strong>botão de pânico</strong> à nossa central de monitoramento, que reage de forma imediata a qualquer evento suspeito. Com protocolos definidos e equipe treinada, garantimos resposta rápida, prevenção de invasões e comunicação direta com responsáveis e autoridades sempre que necessário.</p>
-
       <p>Na FC7, combinamos tecnologia e experiência para oferecer atendimento personalizado, soluções eficientes e contratos transparentes. O conhecimento faz a diferença na sua segurança.</p>
     </section>
   </main>
@@ -193,7 +228,6 @@
     <a href="mailto:suportefc7@gmail.com">suportefc7@gmail.com</a> &bull; (17) 98833-5341</p>
   </footer>
 
-  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/5517988335341" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
