@@ -3,110 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Segurança eletrônica com monitoramento 24h, locação de equipamentos e controle de acesso em São José do Rio Preto - FC7.">
+  <meta name="description" content="Conheça a FC7 Segurança Eletrônica - Especialistas em proteção patrimonial em São José do Rio Preto e região.">
   <title>FC7 Segurança Eletrônica</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      text-align: center;
-      padding: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
     }
-    h1 {
+    header {
+      background: linear-gradient(90deg, #00A859, #0373CF);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 60px;
+      margin-right: 20px;
+    }
+    .branding {
+      display: flex;
+      align-items: center;
+    }
+    .branding h1 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+    .branding p {
+      margin: 2px 0 0 0;
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
+    main {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
       color: #003366;
+      font-size: 1.4em;
+      margin-top: 0;
     }
-    nav a {
-      margin: 0 10px;
-      color: #003366;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+    p {
+      line-height: 1.7;
+      margin: 16px 0;
     }
     footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #777;
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.95em;
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
     }
   </style>
 </head>
-  <header style="background: linear-gradient(90deg, #00A859, #0373CF); padding: 20px 10px; color: white;">
-    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-      <!-- Logotipo + nome -->
-      <div style="display: flex; align-items: center;">
-        <img src="https://fc7segurancaeletronica.com.br/logo-fc7-circular.png" alt="FC7 Logo" style="height: 50px; margin-right: 15px;">
-        <div>
-          <h1 style="margin: 0; font-size: 1.4em;">FC7 Segurança Eletrônica</h1>
-          <p style="margin: 0; font-size: 0.9em;">O conhecimento faz a diferença</p>
-        </div>
+<body>
+  <header>
+    <div class="branding">
+      <img src="https://fc7segurancaeletronica.com.br/logo-fc7-circular.png" alt="Logotipo FC7">
+      <div>
+        <h1>FC7 Segurança Eletrônica</h1>
+        <p>O conhecimento faz a diferença</p>
       </div>
-
-      <!-- Menu -->
-      <nav style="display: flex; gap: 30px; font-size: 0.95em; margin-top: 10px;">
-        <!-- Sobre / História -->
-        <div style="position: relative;">
-          <a href="#" style="color: white; text-decoration: none; display: flex; align-items: center;">
-            🔒 <span style="margin-left: 6px;">FC7</span>
-          </a>
-          <div class="submenu" style="position: absolute; top: 25px; background: white; color: #003366; padding: 10px; border-radius: 5px; display: none;">
-            <a href="sobre.html" style="display: block; padding: 5px 0; text-decoration: none; color: #003366;">História FC7</a>
-            <a href="valores.html" style="display: block; padding: 5px 0; text-decoration: none; color: #003366;">Missão, Visão e Valores</a>
-          </div>
-        </div>
-
-        <!-- Serviços -->
-        <a href="servicos.html" style="color: white; text-decoration: none; display: flex; align-items: center;">
-          📷 <span style="margin-left: 6px;">Serviços</span>
-        </a>
-
-        <!-- Fale Conosco -->
-        <a href="contato.html" style="color: white; text-decoration: none; display: flex; align-items: center;">
-          💬📱 <span style="margin-left: 6px;">Fale Conosco</span>
-        </a>
-      </nav>
     </div>
-
-    <!-- Script submenu hover -->
-    <script>
-      document.querySelectorAll('header nav div').forEach(item => {
-        item.addEventListener('mouseenter', () => {
-          const submenu = item.querySelector('.submenu');
-          if (submenu) submenu.style.display = 'block';
-        });
-        item.addEventListener('mouseleave', () => {
-          const submenu = item.querySelector('.submenu');
-          if (submenu) submenu.style.display = 'none';
-        });
-      });
-    </script>
   </header>
+  <main>
+    <section>
+      <h2>Sobre a FC7 Segurança Eletrônica</h2>
+      <p>Com mais de 14 anos de atuação, a FC7 Segurança Eletrônica é referência em soluções completas para proteção patrimonial. Sediada em São José do Rio Preto/SP, atende residências, comércios, indústrias, condomínios e propriedades rurais com responsabilidade, fé e conhecimento técnico.</p>
 
-</header>
+      <p>Oferecemos serviços de venda, instalação e manutenção corretiva e preventiva (com ou sem contrato) nos seguintes sistemas: <strong>sistemas de câmeras (CFTV)</strong>, <strong>sistemas de alarme</strong>, <strong>controle de acesso</strong>, <strong>cercas elétricas</strong>, <strong>redes lógicas</strong>, <strong>telecomunicações (interfonia)</strong>, <strong>portões automáticos</strong> e <strong>energia solar</strong>. Atuamos também com <strong>auditoria de sistemas de terceiros</strong>, <strong>projetos personalizados</strong> e <strong>treinamentos técnicos</strong>, tanto ministrando quanto participando, garantindo constante atualização e excelência.</p>
 
-  <section>
-    <h2>Sobre a FC7 Segurança Eletrônica</h2>
-    <p>Com mais de 14 anos de atuação, a FC7 Segurança Eletrônica é referência em soluções completas para proteção patrimonial. Sediada em São José do Rio Preto/SP, atende residências, comércios, indústrias, condomínios e propriedades rurais com responsabilidade, fé e conhecimento técnico.</p>
+      <p>Nosso serviço de <strong>monitoramento 24 horas</strong> atua em tempo real com tecnologia de ponta, integrando sensores, alarmes, imagens e <strong>botão de pânico</strong> à nossa central de monitoramento, que reage de forma imediata a qualquer evento suspeito. Com protocolos definidos e equipe treinada, garantimos resposta rápida, prevenção de invasões e comunicação direta com responsáveis e autoridades sempre que necessário.</p>
 
-    <p>Oferecemos serviços de venda, instalação e manutenção corretiva e preventiva (com ou sem contrato) nos seguintes sistemas: <strong>sistemas de câmeras (CFTV)</strong>, <strong>sistemas de alarme</strong>, <strong>controle de acesso</strong>, <strong>cercas elétricas</strong>, <strong>redes lógicas</strong>, <strong>telecomunicações (interfonia)</strong>, <strong>portões automáticos</strong> e <strong>energia solar</strong>. Atuamos também com <strong>auditoria de sistemas de terceiros</strong>, <strong>projetos personalizados</strong> e <strong>treinamentos técnicos</strong>, tanto ministrando quanto participando, garantindo constante atualização e excelência.</p>
-
-    <p>Nosso serviço de <strong>monitoramento 24 horas</strong> atua em tempo real com tecnologia de ponta, integrando sensores, alarmes, imagens e botão de pânico à nossa central de monitoramento, que reage de forma imediata a qualquer evento suspeito. Com protocolos definidos e equipe treinada, garantimos resposta rápida, prevenção de invasões e comunicação direta com responsáveis e autoridades sempre que necessário.</p>
-
-    <p>Na FC7, combinamos tecnologia e experiência para oferecer atendimento personalizado, soluções eficientes e contratos transparentes. O conhecimento faz a diferença na sua segurança.</p>
-  </section>
-</main>
-
-
-  <nav>
-    <a href="monitoramento.html">Monitoramento 24h</a>
-    <a href="locacao.html">Locação</a>
-    <a href="controle-acesso.html">Controle de Acesso</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
+      <p>Na FC7, combinamos tecnologia e experiência para oferecer atendimento personalizado, soluções eficientes e contratos transparentes. O conhecimento faz a diferença na sua segurança.</p>
+    </section>
+  </main>
   <footer>
-    <p>&copy; 2025 FC7 Segurança Eletrônica – São José do Rio Preto/SP</p>
+    <p>&copy; 2025 FC7 Segurança Eletrônica &bull; São José do Rio Preto – SP<br>
+    <a href="mailto:suportefc7@gmail.com">suportefc7@gmail.com</a> &bull; (17) 98833-5341</p>
   </footer>
-
 </body>
 </html>
