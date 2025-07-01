@@ -3,88 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Serviço de manutenção preventiva em sistemas de segurança eletrônica para empresas, condomínios e residências.">
+  <meta name="description" content="Serviço de manutenção preventiva com visitas técnicas programadas e garantia de funcionamento dos sistemas.">
   <title>Manutenção Preventiva | FC7 Segurança Eletrônica</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    * { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f1f1f1;
+      background-color: #f4f6f9;
       color: #333;
     }
-    header, footer {
+    header {
+      background: linear-gradient(90deg, #00A859, #0373CF);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+    header img { height: 60px; margin-right: 20px; }
+    .branding {
+      display: flex;
+      align-items: center;
+    }
+    .branding h1 { font-size: 1.5em; margin: 0; }
+    .branding p { margin: 2px 0 0 0; font-size: 0.9em; opacity: 0.9; }
+    nav {
+      margin-top: 10px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .menu-item { position: relative; }
+    .menu-link {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .menu-link i { font-size: 1em; }
+    .menu-link:hover { background-color: rgba(255,255,255,0.2); }
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      background-color: white;
+      color: #003366;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      min-width: 200px;
+      z-index: 99;
+    }
+    .submenu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #003366;
+      font-size: 0.95em;
+    }
+    .submenu a:hover { background-color: #f0f0f0; }
+    .menu-item:hover .submenu { display: block; }
+
+    main {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #003366;
+      font-size: 1.4em;
+      margin-top: 0;
+    }
+    p {
+      line-height: 1.7;
+      margin: 16px 0;
+    }
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 10px; }
+    footer {
       background-color: #003366;
       color: white;
       text-align: center;
-      padding: 20px 10px;
+      padding: 25px 15px;
+      font-size: 0.95em;
     }
-    main {
-      padding: 40px 20px;
-      max-width: 960px;
-      margin: auto;
-      background-color: white;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .contato {
-      margin-top: 30px;
-      font-weight: bold;
-    }
-    a {
-      color: #003366;
-      text-decoration: none;
-    }
-    a:hover {
+    footer a {
+      color: #ffffff;
       text-decoration: underline;
+    }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Manutenção Preventiva</h1>
-    <p>Sistemas de segurança sempre em funcionamento com eficiência e confiabilidade</p>
+    <div class="branding">
+      <img src="assets/logo-fc7-circular.png" alt="Logotipo FC7">
+      <div>
+        <h1>FC7 Segurança Eletrônica</h1>
+        <p>O conhecimento faz a diferença</p>
+      </div>
+    </div>
+    <nav>
+      <div class="menu-item">
+        <a href="#" class="menu-link"><i class="fas fa-building"></i>Sobre</a>
+        <div class="submenu">
+          <a href="sobre.html">História</a>
+          <a href="valores.html">Missão, Visão e Valores</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link"><i class="fas fa-shield-alt"></i>Serviços</a>
+        <div class="submenu">
+          <a href="monitoramento.html">Monitoramento 24h</a>
+          <a href="locacao.html">Locação de Equipamentos</a>
+          <a href="manutencao.html">Manutenção Preventiva</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="contato.html" class="menu-link"><i class="fas fa-envelope"></i>Contato</a>
+      </div>
+    </nav>
   </header>
+
   <main>
     <section>
-      <h2>Objetivo da manutenção preventiva</h2>
-      <p>Evitar falhas, prolongar a vida útil dos equipamentos e garantir a continuidade da proteção patrimonial com máxima performance.</p>
-    </section>
+      <h2>Funcionamento garantido com manutenção preventiva</h2>
+      <p>Nosso serviço de manutenção preventiva é essencial para garantir que os sistemas de segurança operem com eficiência máxima e sem interrupções. As visitas são programadas conforme contrato para verificação de funcionamento e prevenção de falhas.</p>
 
-    <section>
-      <h2>Serviços inclusos</h2>
+      <h3>O que está incluso:</h3>
       <ul>
-        <li>Verificação completa de sensores, centrais de alarme e sirenes</li>
-        <li>Inspeção e limpeza de câmeras, ajustes de foco e posicionamento</li>
-        <li>Teste de gravadores, nobreaks e fontes de alimentação</li>
-        <li>Checagem de dispositivos de controle de acesso</li>
-        <li>Relatório técnico com registro das condições e recomendações</li>
+        <li>Verificação do funcionamento de sensores, câmeras, cercas e alarmes</li>
+        <li>Testes de comunicação e integridade dos cabos e conexões</li>
+        <li>Atualização e ajustes de configurações se necessário</li>
+        <li>Relatório detalhado de cada visita com pontos observados</li>
+        <li>Reposição de peças ou correção de falhas (sob consulta)</li>
+      </ul>
+
+      <h3>Ideal para:</h3>
+      <ul>
+        <li>Empresas e condomínios com sistemas de segurança instalados</li>
+        <li>Locais que exigem operação contínua dos equipamentos</li>
+        <li>Clientes que desejam prevenir problemas antes que se tornem emergências</li>
       </ul>
     </section>
-
-    <section>
-      <h2>Frequência recomendada</h2>
-      <p>Oferecemos planos mensais, bimestrais ou sob demanda, de acordo com a criticidade e o porte do sistema instalado.</p>
-    </section>
-
-    <section>
-      <h2>Área de atendimento</h2>
-      <p>Atuação em toda a região de São José do Rio Preto – SP com equipe técnica própria, qualificada e uniformizada.</p>
-    </section>
-
-    <section class="contato">
-      <p>Solicite seu plano de manutenção:</p>
-      <p><a href="mailto:suportefc7@gmail.com">suportefc7@gmail.com</a> | <a href="https://wa.me/5517988335341" target="_blank">(17) 98833-5341</a></p>
-    </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 FC7 Segurança Eletrônica &bull; O conhecimento faz a diferença<br>
-    São José do Rio Preto – SP<br>
-    <a href="mailto:suportefc7@gmail.com" style="color:white;">suportefc7@gmail.com</a> &bull; (17) 98833-5341</p>
+    <p>&copy; 2025 FC7 Segurança Eletrônica &bull; São José do Rio Preto – SP<br>
+    <a href="mailto:suportefc7@gmail.com">suportefc7@gmail.com</a> &bull; (17) 98833-5341</p>
   </footer>
+
+  <a href="https://wa.me/5517988335341" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
