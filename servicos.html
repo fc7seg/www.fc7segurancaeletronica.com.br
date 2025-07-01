@@ -3,77 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sobre a história, missão e valores da FC7 Segurança Eletrônica.">
-  <title>Sobre | FC7 Segurança Eletrônica</title>
+  <meta name="description" content="Conheça todos os serviços oferecidos pela FC7 Segurança Eletrônica.">
+  <title>Serviços | FC7 Segurança Eletrônica</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    * { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f4f6f9;
       color: #333;
     }
-    header, footer {
+    header {
+      background: linear-gradient(90deg, #00A859, #0373CF);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+    }
+    header img { height: 60px; margin-right: 20px; }
+    .branding {
+      display: flex;
+      align-items: center;
+    }
+    .branding h1 { font-size: 1.5em; margin: 0; }
+    .branding p { margin: 2px 0 0 0; font-size: 0.9em; opacity: 0.9; }
+    nav {
+      margin-top: 10px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .menu-item { position: relative; }
+    .menu-link {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .menu-link i { font-size: 1em; }
+    .menu-link:hover { background-color: rgba(255,255,255,0.2); }
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      background-color: white;
+      color: #003366;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      min-width: 200px;
+      z-index: 99;
+    }
+    .submenu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #003366;
+      font-size: 0.95em;
+    }
+    .submenu a:hover { background-color: #f0f0f0; }
+    .menu-item:hover .submenu { display: block; }
+
+    main {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #003366;
+      font-size: 1.4em;
+      margin-top: 0;
+    }
+    p {
+      line-height: 1.7;
+      margin: 16px 0;
+    }
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 10px; }
+    footer {
       background-color: #003366;
       color: white;
       text-align: center;
-      padding: 20px 10px;
+      padding: 25px 15px;
+      font-size: 0.95em;
     }
-    main {
-      padding: 40px 20px;
-      max-width: 960px;
-      margin: auto;
-      background-color: white;
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
     }
-    h1, h2 {
-      color: #003366;
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease;
     }
-    p {
-      margin-bottom: 15px;
-      line-height: 1.6;
+    .whatsapp-float:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Sobre a FC7 Segurança Eletrônica</h1>
-    <p>O conhecimento faz a diferença</p>
+    <div class="branding">
+      <img src="assets/logo-fc7-circular.png" alt="Logotipo FC7">
+      <div>
+        <h1>FC7 Segurança Eletrônica</h1>
+        <p>O conhecimento faz a diferença</p>
+      </div>
+    </div>
+    <nav>
+      <div class="menu-item">
+        <a href="#" class="menu-link"><i class="fas fa-building"></i>Sobre</a>
+        <div class="submenu">
+          <a href="sobre.html">História</a>
+          <a href="valores.html">Missão, Visão e Valores</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link"><i class="fas fa-shield-alt"></i>Serviços</a>
+        <div class="submenu">
+          <a href="monitoramento.html">Monitoramento 24h</a>
+          <a href="locacao.html">Locação de Equipamentos</a>
+          <a href="manutencao.html">Manutenção Preventiva</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="contato.html" class="menu-link"><i class="fas fa-envelope"></i>Contato</a>
+      </div>
+    </nav>
   </header>
+
   <main>
     <section>
-      <h2>Quem Somos</h2>
-      <p>A FC7 Segurança Eletrônica é uma empresa sediada em São José do Rio Preto/SP, atuando há mais de 14 anos no segmento de segurança. Nossa experiência sólida é resultado do compromisso com a qualidade e o respeito à vida de nossos clientes, levando soluções eficientes tanto para áreas urbanas quanto rurais.</p>
-    </section>
+      <h2>Nossos serviços especializados</h2>
+      <p>Oferecemos soluções completas para proteção de residências, comércios, indústrias, condomínios e propriedades rurais. Atendemos com qualidade técnica, experiência e suporte personalizado.</p>
 
-    <section>
-      <h2>Missão</h2>
-      <p>Levar segurança, tranquilidade e inovação tecnológica a cada cliente, através de soluções acessíveis, confiáveis e sob medida.</p>
-    </section>
-
-    <section>
-      <h2>Visão</h2>
-      <p>Ser reconhecida como referência em segurança eletrônica no interior de São Paulo, destacando-se pela excelência no atendimento e pelo uso de tecnologia de ponta.</p>
-    </section>
-
-    <section>
-      <h2>Valores</h2>
+      <h3>Serviços principais:</h3>
       <ul>
-        <li>Compromisso com a segurança e a vida</li>
-        <li>Respeito ao cliente e à sua individualidade</li>
-        <li>Transparência nas relações</li>
-        <li>Atualização constante e inovação</li>
-        <li>Fé em Deus e valorização do conhecimento</li>
+        <li>1. Sistemas de Câmeras (CFTV) com monitoramento remoto</li>
+        <li>2. Sistemas de Alarme com sensores e integração</li>
+        <li>3. Controle de Acesso (cartões, tags, biometria, QR code)</li>
+        <li>4. Cercas Elétricas e sensores perimetrais</li>
+        <li>5. Redes Lógicas e cabeamento estruturado</li>
+        <li>6. Telecomunicações (interfonia, vídeo porteiro)</li>
+        <li>7. Portões Automáticos e motores inteligentes</li>
+        <li>8. Energia Solar Fotovoltaica sob medida</li>
+      </ul>
+
+      <h3>Serviços complementares:</h3>
+      <ul>
+        <li>Manutenção corretiva e preventiva (com ou sem contrato)</li>
+        <li>Locação de equipamentos com suporte contínuo</li>
+        <li>Auditoria e revisão de sistemas instalados por terceiros</li>
+        <li>Projetos personalizados de segurança conforme o perfil do local</li>
+        <li>Implantação de rede lógica para integração de sistemas</li>
+        <li>Treinamentos ministrados e recebidos continuamente</li>
       </ul>
     </section>
-
-    <section>
-      <p>Fale conosco: <a href="mailto:suportefc7@gmail.com">suportefc7@gmail.com</a> | (17) 98833-5341</p>
-    </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 FC7 Segurança Eletrônica &bull; O conhecimento faz a diferença<br>
-    São José do Rio Preto – SP<br>
-    <a href="mailto:suportefc7@gmail.com" style="color:white;">suportefc7@gmail.com</a> &bull; (17) 98833-5341</p>
+    <p>&copy; 2025 FC7 Segurança Eletrônica &bull; São José do Rio Preto – SP<br>
+    <a href="mailto:suportefc7@gmail.com">suportefc7@gmail.com</a> &bull; (17) 98833-5341</p>
   </footer>
+
+  <a href="https://wa.me/5517988335341" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
