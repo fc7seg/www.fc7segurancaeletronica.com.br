@@ -237,5 +237,25 @@
   <a href="https://wa.me/5517988335341" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
+  <a href="https://wa.me/5517988335341" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      const offset = -index * 100;
+      document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+    }
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    }, 5000); // Troca a cada 5 segundos
+  </script>
 </body>
 </html>
+
